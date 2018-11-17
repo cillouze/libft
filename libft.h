@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:34:27 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/12 19:27:35 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 16:54:23 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,17 +120,17 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size);
 
 size_t     	ft_strlen(char *c);
 
-size_t             ft_strlen_const(const char *c);
+size_t		ft_strlen_const(const char *c);
 
-char    *ft_strmap(char const *s, char (*f)(char));
+char    	*ft_strmap(char const *s, char (*f)(char));
 
-char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char    	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-char    *ft_strncat(char *dest, const char *src, size_t  n);
+char    	*ft_strncat(char *dest, const char *src, size_t  n);
 
-int     ft_strncmp(char *s1, char *s2, size_t n);
+int     	ft_strncmp(char *s1, char *s2, size_t n);
 
-int     ft_strnequ(char const *s1, char const *s2, size_t n);
+int     	ft_strnequ(char const *s1, char const *s2, size_t n);
 
 char    *ft_strnew(size_t n);
 

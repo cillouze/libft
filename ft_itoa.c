@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:44:35 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/12 16:57:10 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:03:50 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@ static int	ft_number(int n)
 	return (count);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*strnb;
-	int	i;
-	int test;
+	int		i;
+	int		test;
 
 	i = ft_number(n);
 	test = 1;
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 		strnb[0] = '-';
 	else
 		i--;
-	while ((i >= 0 && test == 1)|| (test == 2 && i > 0))
+	while ((i >= 0 && test == 1) || (test == 2 && i > 0))
 	{
 		if (test == 1)
 			strnb[i] = (n - (n / 10 * 10)) + '0';

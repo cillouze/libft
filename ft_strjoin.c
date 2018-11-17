@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:55:48 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 17:56:35 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:11:41 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	len;
+	int		len;
 	char	*cpy;
-	int	i1;
-	int	i2;
-
+	int		i1;
+	int		i2;
 
 	i1 = 0;
 	i2 = 0;

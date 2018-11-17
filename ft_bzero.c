@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:36:47 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 18:58:49 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 15:23:36 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	while(n > 0)
+	while (n > 0)
 	{
 		*(unsigned char *)s = 0;
 		s++;

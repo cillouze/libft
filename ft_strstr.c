@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:14:05 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 18:14:23 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:19:18 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,17 @@ char	*ft_strstr(char *search, char *find)
 		return (search);
 	if (ft_strlen(search) < ft_strlen(find))
 		return (NULL);
-	while(*search)
+	while (*search)
 	{
 		i = 0;
-		while(find[i] != *search && *search)
+		while (find[i] != *search && *search)
 			search++;
-		while(find[i] == search[i] && find[i] && search[i])
+		while (find[i] == search[i] && find[i] && search[i])
 			i++;
-		if(find[i] == '\0')
-			return(search);
+		if (find[i] == '\0')
+			return (search);
 		else if (*search)
 			search++;
 	}
-	return(NULL);
+	return (NULL);
 }

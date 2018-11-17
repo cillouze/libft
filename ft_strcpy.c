@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:50:15 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 17:50:39 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:08:40 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strcpy(char *dest, char *src)
 	int		i;
 
 	i = 0;
-	while(src[i])
+	while (src[i])
 	{
 		dest[i] = src[i];
 		i++;

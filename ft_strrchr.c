@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:11:58 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/12 19:09:26 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:14:47 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_strrchr(const char *s, int c)
 
 	count = 0;
 	equal = 0;
-	while(*s)
+	while (*s)
 	{
-		if(*s == (char)c)
+		if (*s == (char)c)
 		{
 			count = 0;
 			equal = 1;
@@ -29,7 +29,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if ((char)c == '\0')
 		return ((char*)s);
-	while(count != 0)
+	while (count != 0)
 	{
 		s--;
 		count--;

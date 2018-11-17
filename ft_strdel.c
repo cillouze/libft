@@ -6,13 +6,13 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:51:01 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/10 16:10:27 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:06:45 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strdel(char	**as)
+void	ft_strdel(char **as)
 {
 	free(*as);
 	*as = NULL;

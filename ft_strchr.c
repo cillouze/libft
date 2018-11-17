@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:47:02 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 17:47:38 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:02:20 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@ char	*ft_strchr(const char *s, int c)
 	char	cpy;
 
 	cpy = (char)c;
-	while(*s != cpy && *s)
+	while (*s != cpy && *s)
 	{
 		s++;
 	}
-	if(*s == cpy)
+	if (*s == cpy)
 		return ((char *)s);
 	else
 		return (0);

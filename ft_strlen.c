@@ -6,20 +6,20 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:57:44 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 17:58:05 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:10:36 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlen(char *c)
+size_t	ft_strlen(char *c)
 {
 	size_t	i;
-	
+
 	i = 0;
-	while(c[i])
+	while (c[i])
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }

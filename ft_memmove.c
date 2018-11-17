@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:59:18 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/14 17:11:31 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:06:03 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (src >= dest)
-		return (ft_memcpy(dest,src,n));
+		return (ft_memcpy(dest, src, n));
 	else
 		while (n > 0)
 		{
@@ -24,4 +24,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	return (dest);
 }
-

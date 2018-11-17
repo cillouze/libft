@@ -6,13 +6,13 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:12:54 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 18:13:57 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:28:33 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_numword(char const *s, char c)
+static int	ft_numword(char const *s, char c)
 {
 	int		n;
 	int		i;
@@ -30,7 +30,7 @@ static int		ft_numword(char const *s, char c)
 	return (n);
 }
 
-static int		ft_wordlen(char const *s, char c)
+static int	ft_wordlen(char const *s, char c)
 {
 	int		i;
 
@@ -49,23 +49,21 @@ char	**ft_strsplit(char const *s, char c)
 	int		n;
 
 	n = 0;
-	if (!(split = (char**)malloc(sizeof (char*) * ft_numword(s, c) + 1)))
+	if (!(split = (char**)malloc(sizeof(char*) * ft_numword(s, c) + 1)))
 		return (NULL);
 	while (*s == c && *s)
 		s++;
 	while (*s)
 	{
 		i = 0;
-		if (!(split[n] = (char*)malloc(sizeof (char*) * ft_wordlen(s, c) + 1)))
+		if (!(split[n] = (char*)malloc(sizeof(char*) * ft_wordlen(s, c) + 1)))
 			return (NULL);
 		while (*s != c && *s)
 		{
 			split[n][i] = *s;
-			i++;
-			s++;
+			++i && ++s;
 		}
-		split[n][i] = '\0';
-		n++;
+		split[n++][i] = '\0';
 		while (*s == c)
 			s++;
 	}

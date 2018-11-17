@@ -6,13 +6,13 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:08:44 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/07 17:10:06 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 17:08:22 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_number(int n)
+static int	ft_number(int n)
 {
 	int	count;
 
@@ -27,12 +27,12 @@ static int		ft_number(int n)
 	return (count);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void		ft_putnbr_fd(int n, int fd)
 {
-	int	sqrt;
-	int	cpy;
-	int	nega;
-	int	count;
+	int		sqrt;
+	int		cpy;
+	int		nega;
+	int		count;
 
 	count = ft_number(n) - 1;
 	nega = 1;
