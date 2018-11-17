@@ -54,7 +54,13 @@ SRC = ft_atoi.c	\
 	ft_strcpy.c	\
 	ft_strmap.c	\
 	ft_strstr.c	\
-	ft_number.c
+	ft_number.c	\
+	ft_lstnew.c	\
+	ft_lstdelone.c	\
+	ft_lstdel.c	\
+	ft_lstadd.c	\
+	ft_lstiter.c	\
+	ft_lstmap.c
 
 
 OBJECTS = ft_atoi.o	\
@@ -111,8 +117,13 @@ OBJECTS = ft_atoi.o	\
 	ft_strjoin.o	\
 	ft_strnequ.o	\
 	ft_toupper.o	\
-	ft_number.o
-
+	ft_number.o	\
+	ft_lstnew.o	\
+	ft_lstdelone.o	\
+	ft_lstdel.o	\
+	ft_lstadd.o	\
+	ft_lstiter.o	\
+	ft_lstmap.o
 $(NAME):
 	gcc -Wall -Wextra -Werror -c -I include/ $(SRC)
 	ar rc libft.a $(OBJECTS)

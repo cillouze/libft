@@ -23,7 +23,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	if (len == 0 || start > (unsigned int) ft_strlen_const(s)
 			|| s == '\0' )
 		return (NULL);
-	if (!(cpy = malloc(sizeof (char) * len + 1)))
+	if (!(cpy = (char*)malloc(sizeof (char) * len + 1)))
 		return (NULL);
 	while (n < len)
 	{

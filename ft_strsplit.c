@@ -49,14 +49,14 @@ char	**ft_strsplit(char const *s, char c)
 	int		n;
 
 	n = 0;
-	if (!(split = malloc(sizeof (char*) * ft_numword(s, c) + 1)))
+	if (!(split = (char**)malloc(sizeof (char*) * ft_numword(s, c) + 1)))
 		return (NULL);
 	while (*s == c && *s)
 		s++;
 	while (*s)
 	{
 		i = 0;
-		if (!(split[n] = malloc(sizeof (char*) * ft_wordlen(s, c) + 1)))
+		if (!(split[n] = (char*)malloc(sizeof (char*) * ft_wordlen(s, c) + 1)))
 			return (NULL);
 		while (*s != c && *s)
 		{
