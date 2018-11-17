@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:12:54 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/17 17:28:33 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 22:12:37 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static int	ft_wordlen(char const *s, char c)
 	return (i);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	char	**split;
 	int		i;

@@ -6,7 +6,7 @@
 /*   By: tcillard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:16:19 by tcillard          #+#    #+#             */
-/*   Updated: 2018/11/17 17:23:04 by tcillard         ###   ########.fr       */
+/*   Updated: 2018/11/17 22:12:08 by tcillard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strtrim(char const *s)
 			&& s[end] != '\0')
 		end--;
 	if (!(cpy = (char*)malloc(sizeof(char) * (end - start) + 2)))
-				return (0);
+		return (0);
 	while (start + n <= end)
 	{
 		cpy[n] = s[start + n];
